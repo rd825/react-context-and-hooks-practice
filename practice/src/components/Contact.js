@@ -1,18 +1,18 @@
-import React, {useState} from 'react';
+import React from 'react';
+// {useState} 
 
 const Contact = props => {
-    const [count, setCount] = useState(0);
+
+    // const [count, setCount] = useState(0);
 
     return (
         <>
             <h3>{props.contact.name}</h3>
             <strong>{props.contact.age}</strong>
-            <p>The count is {count}</p>
-            <button onClick={() => setCount(count + 1)}>Click</button>
-            
+            {/* <p>You've hung out {count} times.</p>
+            <button onClick={() => setCount(count + 1)}>Hang-out Counter</button> */}
         </>
     )
 }
-
 
 export default Contact;
